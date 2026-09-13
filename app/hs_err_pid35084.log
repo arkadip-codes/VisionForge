@@ -1,0 +1,277 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 255852544 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3766), pid=35084, tid=32556
+#
+# JRE version:  (25.0.3) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.0.3+-15898627-b508.16, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Djava.awt.headless=true -Djava.library.path=D:\Programs\Android Studio\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python314\Scripts\;C:\Python314\;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\arkad\AppData\Local\UniGetUI\Chocolatey\bin;C:\Users\arkad\AppData\Local\Microsoft\WindowsApps;C:\Users\arkad\AppData\Local\GitHubDesktop\bin;C:\Users\arkad\AppData\Local\JetBrains\Toolbox\scripts;D:\Programs\Jetbrains\IntelliJ IDEA 2025.2\bin;D:\Programs\Jetbrains\CLion 2025.2\bin;D:\Programs\Jetbrains\PyCharm 2025.2\bin;C:\Users\arkad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Exercism;C:\Users\arkad\AppData\Local\Programs\Hyper\resources\bin;C:\Users\arkad\Ap;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\arkad\AppData\Roaming\npm;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\DenoLand.Deno_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121583-g4348bde2d2-win64-gpl/bin;D:\Code\flutter\binD:\Code\flutter\bin;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Links;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\ch.LosslessCut_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\program files (x86)\steam\ext\bin;C:\Users\arkad\AppData\Local\PowerToys\DSCModules\;C:\Users\arkad\AppData\Local\PowerToys\bin\;.;D:\SIH2026_1\app\src\testDebug\jniLibs;D:\SIH2026_1\app\src\test\jniLibs -Dorg.gradle.internal.worker.tmpdir=D:\SIH2026_1\app\build\tmp\testDebugUnitTest\work --add-opens=java.base/java.io=ALL-UNNAMED -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=IN -Duser.language=en -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3'
+
+Host: AMD Ryzen 7 7735HS with Radeon Graphics        , 16 cores, 15G,  Windows 11 , 64 bit Build 28000 (10.0.28000.3002)
+Time: Mon Sep 14 00:04:25 2026 India Standard Time elapsed time: 0.041841 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000008000c8b650):  JavaThread "Unknown thread" [_thread_in_vm, id=32556, stack(0x0000008000a50000,0x0000008000b50000) (1024K)]
+
+Stack: [0x0000008000a50000,0x0000008000b50000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x7bf039]  (no source info available)
+V  [jvm.dll+0x78912d]  (no source info available)
+V  [jvm.dll+0xa0e615]  (no source info available)
+V  [jvm.dll+0xa10c94]  (no source info available)
+V  [jvm.dll+0xa11393]  (no source info available)
+V  [jvm.dll+0x30a116]  (no source info available)
+V  [jvm.dll+0x7bb145]  (no source info available)
+V  [jvm.dll+0x7adc17]  (no source info available)
+V  [jvm.dll+0x3fea3b]  (no source info available)
+V  [jvm.dll+0x406bf6]  (no source info available)
+V  [jvm.dll+0x3f30a6]  (no source info available)
+V  [jvm.dll+0x3f3388]  (no source info available)
+V  [jvm.dll+0x3c8622]  (no source info available)
+V  [jvm.dll+0x3c943e]  (no source info available)
+V  [jvm.dll+0x9d36cf]  (no source info available)
+V  [jvm.dll+0x464f42]  (no source info available)
+V  [jvm.dll+0x9b74d2]  (no source info available)
+V  [jvm.dll+0x507b3e]  (no source info available)
+V  [jvm.dll+0x5093c1]  (no source info available)
+C  [jli.dll+0x5401]  (no source info available)
+C  [ucrtbase.dll+0x47730]  (no source info available)
+C  [KERNEL32.DLL+0x313e3]  (no source info available)
+C  [ntdll.dll+0x9b70]  (no source info available)
+
+Lock stack of current Java thread (top to bottom):
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffedc181c08, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000008000cbf890 WorkerThread "GC Thread#0"                     [id=36456, stack(0x0000008010810000,0x0000008010910000) (1024K)]
+  0x0000008000cc6a00 ConcurrentGCThread "G1 Main Marker"            [id=36028, stack(0x0000008010910000,0x0000008010a10000) (1024K)]
+  0x0000008000cc9220 WorkerThread "G1 Conc#0"                       [id=18740, stack(0x0000008010a10000,0x0000008010b10000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffedb7fdbba]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffedc207aa8] Heap_lock - owner thread: 0x0000008000c8b650
+
+Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+UseCompressedClassPointers 1, UseCompactObjectHeaders 0
+Narrow klass pointer bits 32, Max shift 3
+Narrow klass base: 0xffffffffffffffff, Narrow klass shift: -1
+Encoding Range: [0xffffffffffffffff - 0x000000007fffffff), (2147483648 bytes)
+Klass Range:    [0x0000000000000000 - 0x0000000000000000), (0 bytes)
+Klass ID Range:  [4294967295 - 0) (1)
+No protection zone.
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 10 size 36 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total reserved 524288K, committed 0K, used 0K [0x00000000e0000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+Heap Regions: E=young(eden), S=young(survivor), O=old, HS=humongous(starts), HC=humongous(continues), CS=collection set, F=free, TAMS=top-at-mark-start, PB=parsable bottom
+
+Card table byte_map: [0x000000800ff10000,0x0000008010010000] _byte_map_base: 0x000000800f810000
+
+Marking Bits: (CMBitMap*) 0x0000008000cc0020
+ Bits: [0x0000008010010000, 0x0000008010810000)
+
+GC Heap Usage History (0 events):
+No events
+
+Metaspace Usage History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.010 Loaded shared library D:\Programs\Android Studio\jbr\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff63b620000 - 0x00007ff63b62a000 	D:\Programs\Android Studio\jbr\bin\java.exe
+0x00007fffc78e0000 - 0x00007fffc7b3e000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fffc6ee0000 - 0x00007fffc6fa7000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fffc4db0000 - 0x00007fffc51b8000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fffc5440000 - 0x00007fffc5587000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fff7d260000 - 0x00007fff7d276000 	D:\Programs\Android Studio\jbr\bin\jli.dll
+0x00007fff8d540000 - 0x00007fff8d55b000 	D:\Programs\Android Studio\jbr\bin\VCRUNTIME140.dll
+0x00007fffc5dd0000 - 0x00007fffc5f9d000 	C:\WINDOWS\System32\USER32.dll
+0x00007fffc4d80000 - 0x00007fffc4da7000 	C:\WINDOWS\System32\win32u.dll
+0x00007fffae070000 - 0x00007fffae2fc000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.28000.2912_none_cc7eb74623a57c00\COMCTL32.dll
+0x00007fffc6de0000 - 0x00007fffc6e12000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fffc55a0000 - 0x00007fffc5648000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fffc4b30000 - 0x00007fffc4c51000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fffc4a00000 - 0x00007fffc4a9e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fffc7020000 - 0x00007fffc70c7000 	C:\WINDOWS\System32\sechost.dll
+0x00007fffc6da0000 - 0x00007fffc6dcf000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fffa9390000 - 0x00007fffa9482000 	C:\Program Files\Windhawk\Engine\1.7.3\64\windhawk.dll
+0x00007fffc6e20000 - 0x00007fffc6eda000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fffc76e0000 - 0x00007fffc77f5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fffa9590000 - 0x00007fffa95bb000 	C:\ProgramData\Windhawk\Engine\Mods\64\explorer-details-better-file-sizes_1.5.1_888757.dll
+0x00007fffc6470000 - 0x00007fffc6606000 	C:\WINDOWS\System32\ole32.dll
+0x00007fffc7360000 - 0x00007fffc76db000 	C:\WINDOWS\System32\combase.dll
+0x00007fffc5980000 - 0x00007fffc5a57000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007fffc6610000 - 0x00007fffc6d9a000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007fffa8920000 - 0x00007fffa8ac9000 	C:\ProgramData\Windhawk\Engine\Mods\64\libc++.whl
+0x00007fffbec70000 - 0x00007fffbed69000 	C:\WINDOWS\SYSTEM32\PROPSYS.dll
+0x00007fffa88e0000 - 0x00007fffa891a000 	C:\ProgramData\Windhawk\Engine\Mods\64\libunwind.whl
+0x00007fffb7b70000 - 0x00007fffb7b7c000 	D:\Programs\Android Studio\jbr\bin\vcruntime140_1.dll
+0x00007ffef92a0000 - 0x00007ffef932d000 	D:\Programs\Android Studio\jbr\bin\msvcp140.dll
+0x00007ffedb420000 - 0x00007ffedc2fd000 	D:\Programs\Android Studio\jbr\bin\server\jvm.dll
+0x00007fffc72d0000 - 0x00007fffc7350000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fffc4890000 - 0x00007fffc48ee000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007fffb8560000 - 0x00007fffb8593000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fffb7810000 - 0x00007fffb781b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fffc4870000 - 0x00007fffc488a000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007fffc37a0000 - 0x00007fffc37bb000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fffb45b0000 - 0x00007fffb45ba000 	D:\Programs\Android Studio\jbr\bin\jimage.dll
+0x00007fffc1e50000 - 0x00007fffc2195000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fffae020000 - 0x00007fffae068000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fffc4cd0000 - 0x00007fffc4d74000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fff88c10000 - 0x00007fff88c2e000 	D:\Programs\Android Studio\jbr\bin\java.dll
+
+JVMTI agents: none
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\Programs\Android Studio\jbr\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.28000.2912_none_cc7eb74623a57c00;C:\Program Files\Windhawk\Engine\1.7.3\64;C:\ProgramData\Windhawk\Engine\Mods\64;D:\Programs\Android Studio\jbr\bin\server
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Djava.library.path=D:\Programs\Android Studio\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python314\Scripts\;C:\Python314\;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\arkad\AppData\Local\UniGetUI\Chocolatey\bin;C:\Users\arkad\AppData\Local\Microsoft\WindowsApps;C:\Users\arkad\AppData\Local\GitHubDesktop\bin;C:\Users\arkad\AppData\Local\JetBrains\Toolbox\scripts;D:\Programs\Jetbrains\IntelliJ IDEA 2025.2\bin;D:\Programs\Jetbrains\CLion 2025.2\bin;D:\Programs\Jetbrains\PyCharm 2025.2\bin;C:\Users\arkad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Exercism;C:\Users\arkad\AppData\Local\Programs\Hyper\resources\bin;C:\Users\arkad\Ap;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\arkad\AppData\Roaming\npm;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\DenoLand.Deno_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121583-g4348bde2d2-win64-gpl/bin;D:\Code\flutter\binD:\Code\flutter\bin;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Links;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\ch.LosslessCut_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\program files (x86)\steam\ext\bin;C:\Users\arkad\AppData\Local\PowerToys\DSCModules\;C:\Users\arkad\AppData\Local\PowerToys\bin\;.;D:\SIH2026_1\app\src\testDebug\jniLibs;D:\SIH2026_1\app\src\test\jniLibs -Dorg.gradle.internal.worker.tmpdir=D:\SIH2026_1\app\build\tmp\testDebugUnitTest\work --add-opens=java.base/java.io=ALL-UNNAMED -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=IN -Duser.language=en -Duser.variant -ea 
+java_command: worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3'
+java_class_path (initial): C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\workerMain\\gradle-worker.jar;D:\\SIH2026_1\\app\\build\\intermediates\\built_in_kotlinc\\debugUnitTest\\compileDebugUnitTestKotlin\\classes;D:\\SIH2026_1\\app\\build\\intermediates\\java_res\\debugUnitTest\\processDebugUnitTestJavaRes\\out;D:\\SIH2026_1\\app\\build\\intermediates\\runtime_app_classes_jar\\debug\\bundleDebugClassesToRuntimeJar\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\junit\\junit\\4.13.2\\8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12\\junit-4.13.2.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\986feaef40d72e329949d4566a33a13c\\transformed\\material-1.10.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\cba99bc950098502c970e6622865f8cd\\transformed\\appcompat-resources-1.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\573bbce1b225aa7e2ad43c607d7d1c30\\transformed\\constraintlayout-2.0.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\7fb011a6039f847ce4ee68afd68bc72e\\transformed\\appcompat-1.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\1a7f9cff9bd8d8cf47e2998dd7f3cc25\\transformed\\webkit-1.12.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\8e283fc28643ab8edc61aa9f52326236\\transformed\\emoji2-views-helper-1.2.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\16d974053c0e508a4f42440e37b5188c\\transformed\\emoji2-1.2.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\518fa8a53f53aaa3f568c1d60ae4e9ee\\transformed\\viewpager2-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\ebc424e87eccfd5961618064a47d237f\\transformed\\fragment-1.3.6-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\a9a8a112d2ae2461d278fc19418a8396\\transformed\\activity-1.8.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\8ef6e7c3a5646c95231e65277699dbc7\\transformed\\drawerlayout-1.1.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e64984ded363b603001d6d686a7e06dc\\transformed\\coordinatorlayout-1.1.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\ea7c6b112229b3e3561f817f0467c62c\\transformed\\dynamicanimation-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\11271b7e508324a333704f76230dd3b4\\transformed\\transition-1.2.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\79ee4c1eb5cf7e123b76779df86e9fa9\\transformed\\vectordrawable-animated-1.1.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\57bcc3e139e7e29adf2687d604bb13f7\\transformed\\vectordrawable-1.1.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e0c5ac974ef549d915b6d77189a5a9ca\\transformed\\viewpager-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\4ebc2e62ee9ec2e8ad3f46ce40e19310\\transformed\\legacy-support-core-utils-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\544829fd00c1d93e169c7d6e78a761f4\\transformed\\loader-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\1af44aae9fdf4be94fee727aa4cc13c2\\transformed\\recyclerview-1.1.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\865de796bad91dfd6162896db075758a\\transformed\\customview-1.1.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\c759f99d6bd4a20691ad88955d64d836\\transformed\\core-1.10.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\1bddb1a059dd17e472f151e274887313\\transformed\\savedstate-1.2.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\30e29752a62fd9a6d430f0361f9107da\\transformed\\lifecycle-process-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\49ce8169f012cb098f8cb12c764ccd4e\\transformed\\lifecycle-livedata-core-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\074d5264a390366a6b506b7cdb5f19dd\\transformed\\lifecycle-livedata-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.lifecycle\\lifecycle-common\\2.6.1\\10f354fdb64868baecd67128560c5a0d6312c495\\lifecycle-common-2.6.1.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\edaac9f2de54c0dd44e84138e4f60e89\\transformed\\lifecycle-viewmodel-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\694262add867b5a919ec1bf3458b5b6b\\transformed\\lifecycle-runtime-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\5e352106e85ff4d572113b36b8445a80\\transformed\\lifecycle-viewmodel-savedstate-2.6.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\d372bf4c5c7cd8bfa3b8ba7ff08cbee4\\transformed\\core-ktx-1.10.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\35c97cf5799ceb8c145deb6522a1b190\\transformed\\annotation-experimental-1.4.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\8e584011d7daac8f65637ade50aa9596\\transformed\\cursoradapter-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.resourceinspection\\resourceinspection-annotation\\1.0.1\\8c21f8ff5d96d5d52c948707f7e4d6ca6773feef\\resourceinspection-annotation-1.0.1.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\b0792f3accaa25ea372c5532a7b7205a\\transformed\\cardview-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\cda4bb450c552badfe76cbf283f0bd69\\transformed\\versionedparcelable-1.1.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.collection\\collection\\1.1.0\\1f27220b47669781457de0d600849a5de0e89909\\collection-1.1.0.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\d32dc91f95cee6546730f022f590b08a\\transformed\\interpolator-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\432c41b6a6b3933ed746fd1cf0a33715\\transformed\\profileinstaller-1.3.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\31a7cdb8766087c734bfe303aae98fa9\\transformed\\startup-runtime-1.1.1-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\4a1ed76f0f45c76a24cd0c06082378b7\\transformed\\tracing-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\ae3fd933bd22261482094dd14e6abeee\\transformed\\core-runtime-2.2.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.arch.core\\core-common\\2.2.0\\5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3\\core-common-2.2.0.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.concurrent\\concurrent-futures\\1.1.0\\50b7fb98350d5f42a4e49704b03278542293ba48\\concurrent-futures-1.1.0.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\8b0756d7db1aa3c85f21bd2ec54523ac\\transformed\\documentfile-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\bb09c264da6aeb76b9f5d70c5ef813e4\\transformed\\localbroadcastmanager-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\27c2c1f8e9ff5334b3ed75c979ea9947\\transformed\\print-1.0.0-runtime.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.annotation\\annotation-jvm\\1.8.1\\b8a16fe526014b7941c1debaccaf9c5153692dbb\\annotation-jvm-1.8.1.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-core-jvm\\1.6.4\\2c997cd1c0ef33f3e751d3831929aeff1390cb30\\kotlinx-coroutines-core-jvm-1.6.4.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlinx\\kotlinx-coroutines-android\\1.6.4\\f955fc8b2ad196e2f4429598440e15f7492eeb2b\\kotlinx-coroutines-android-1.6.4.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-jdk8\\1.8.22\\b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1\\kotlin-stdlib-jdk8-1.8.22.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib-jdk7\\1.8.22\\4dabb8248310d833bb6a8b516024a91fd3d275c\\kotlin-stdlib-jdk7-1.8.22.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains.kotlin\\kotlin-stdlib\\2.2.10\\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\\kotlin-stdlib-2.2.10.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest-core\\1.3\\42a25dc3219429f0e5d060061f71acb49bf010a0\\hamcrest-core-1.3.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\org.jetbrains\\annotations\\13.0\\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\\annotations-13.0.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\com.google.errorprone\\error_prone_annotations\\2.15.0\\38c8485a652f808c8c149150da4e5c2b0bd17f9a\\error_prone_annotations-2.15.0.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\androidx.constraintlayout\\constraintlayout-solver\\2.0.1\\30988fe2d77f3fe3bf7551bb8a8b795fad7e7226\\constraintlayout-solver-2.0.1.jar;C:\\Users\\arkad\\.gradle\\caches\\modules-2\\files-2.1\\com.google.guava\\listenablefuture\\1.0\\c949a840a6acbc5268d088e47b04177bf90b3cad\\listenablefuture-1.0.jar;D:\\SIH2026_1\\app\\build\\intermediates\\java_res\\debug\\processDebugJavaRes\\out;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\cbf9aad31240d1511b4b250e307578ce\\transformed\\material-1.10.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\7290546cac7f3da595344a413becf1b5\\transformed\\appcompat-resources-1.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\f1226f690b5182946c3aea91693ec707\\transformed\\constraintlayout-2.0.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\ab5339cabe2a08a06e1166c0e21098b3\\transformed\\appcompat-1.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\564e6fcdd8d9a762a017ffe99efde7ec\\transformed\\webkit-1.12.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\220e0a6c51d3144cee67ecc1cc4c4fd8\\transformed\\emoji2-views-helper-1.2.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\c2240ed46d1ed3df7257e43ffb30112f\\transformed\\emoji2-1.2.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\c2240ed46d1ed3df7257e43ffb30112f\\transformed\\emoji2-1.2.0\\jars\\libs\\repackaged.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\28432cb6705a0d1460b553cd1cb7efe6\\transformed\\viewpager2-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e612aea50672cf73fbf0de55ce5b4428\\transformed\\fragment-1.3.6\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\c7b793faf98794272bd76b5d81879ff8\\transformed\\activity-1.8.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\78c25a3ec495ac22b1d6dcdc88883147\\transformed\\drawerlayout-1.1.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\0ce5dcc0b907d5fd751c215ccd33527d\\transformed\\coordinatorlayout-1.1.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\80ada6014640af43775357bab5b3f759\\transformed\\dynamicanimation-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\3adad38dc24b71ff872d4e853d2453d7\\transformed\\transition-1.2.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\c86eb72f5a076faaba2231f8ca4b34e4\\transformed\\vectordrawable-animated-1.1.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\fc7595d6be6630c883e7b0a4d723c46f\\transformed\\vectordrawable-1.1.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\620d873bff0268a8790e7d39d938f951\\transformed\\viewpager-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\a7fb18d7dd42eb2e36a7072d7d651527\\transformed\\legacy-support-core-utils-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e2c172b561ee0f8d5f5a57d69e2642ce\\transformed\\loader-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\bdaa77cc025a755e71e2e3f8933d4b62\\transformed\\recyclerview-1.1.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\6458c44f16f3784a7a5bac1e1e1a4eb1\\transformed\\customview-1.1.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\6f55fc5f854e1921e5064b6f391f0924\\transformed\\core-1.10.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\09109f41c96d6d67460ba0e8ac9be0f5\\transformed\\savedstate-1.2.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\bb5c384ecbbdf6a40b39151a29b34ba8\\transformed\\lifecycle-process-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\a62c185aec600f43a6744cb6754a185e\\transformed\\lifecycle-livedata-core-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\0d510f8823be0a5758bf1a1525f5cec2\\transformed\\lifecycle-livedata-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\19b7b248b85c80e27a9d40217ff1bbd1\\transformed\\lifecycle-viewmodel-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\5c5f2da6386beeb29c57ad69661d4f00\\transformed\\lifecycle-runtime-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\1aa51b7dabc424faf8a2aee8fa4f0a33\\transformed\\lifecycle-viewmodel-savedstate-2.6.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e114398e875976d107f6c9d495cb6f4b\\transformed\\core-ktx-1.10.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\ececd9f25cb7de5dec743790663d70ad\\transformed\\annotation-experimental-1.4.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\4b402c1579dc6a99afa7eb768c597a47\\transformed\\cursoradapter-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\f7fe13400598899ba396a49581daf4c3\\transformed\\cardview-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e1199580a28fe124594f132afc0239ab\\transformed\\versionedparcelable-1.1.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\0a01f868439ffdd385da43d2208cda0b\\transformed\\interpolator-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\0dc71a063b881b77c71aabb06bcecebd\\transformed\\profileinstaller-1.3.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\41350d2aad0daac0ce2e9c64ceb93b49\\transformed\\startup-runtime-1.1.1\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\5fbfd52daabe035097a4cd8797093239\\transformed\\tracing-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\4670c8faf96940f7a8b767ce7fd60f65\\transformed\\core-runtime-2.2.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\b67c5674f998f9a8cf0af094a08da056\\transformed\\documentfile-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\e45d480427c60069edc230e746b92b9d\\transformed\\localbroadcastmanager-1.0.0\\jars\\classes.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\f1a97a25bb228a704d4debacaf29b43f\\transformed\\print-1.0.0\\jars\\classes.jar;D:\\SIH2026_1\\app\\build\\intermediates\\compile_and_runtime_r_class_jar\\debug\\processDebugResources\\R.jar;C:\\Users\\arkad\\.gradle\\caches\\9.6.0\\transforms\\4d5f736651d802534a3bd996f977f42c\\transformed\\android.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 12                                        {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 13                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 255852544                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MarkStackSizeMax                         = 536870912                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 536870912                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 7667712                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122028032                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122028032                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251723776                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 536870912                              {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Release file:
+<release file has not been read>
+Environment Variables:
+PATH=C:\Python314\Scripts\;C:\Python314\;C:\Python313\Scripts\;C:\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\arkad\AppData\Local\UniGetUI\Chocolatey\bin;C:\Users\arkad\AppData\Local\Microsoft\WindowsApps;C:\Users\arkad\AppData\Local\GitHubDesktop\bin;C:\Users\arkad\AppData\Local\JetBrains\Toolbox\scripts;D:\Programs\Jetbrains\IntelliJ IDEA 2025.2\bin;D:\Programs\Jetbrains\CLion 2025.2\bin;D:\Programs\Jetbrains\PyCharm 2025.2\bin;C:\Users\arkad\AppData\Local\Programs\Microsoft VS Code\bin;C:\Exercism;C:\Users\arkad\AppData\Local\Programs\Hyper\resources\bin;C:\Users\arkad\Ap;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Users\arkad\AppData\Roaming\npm;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\DenoLand.Deno_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-N-121583-g4348bde2d2-win64-gpl/bin;D:\Code\flutter\binD:\Code\flutter\bin;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Links;C:\Users\arkad\AppData\Local\Microsoft\WinGet\Packages\ch.LosslessCut_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\program files (x86)\steam\ext\bin;C:\Users\arkad\AppData\Local\PowerToys\DSCModules\;C:\Users\arkad\AppData\Local\PowerToys\bin\
+USERNAME=arkad
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD
+TMP=C:\Users\arkad\AppData\Local\Temp
+TEMP=C:\Users\arkad\AppData\Local\Temp
+
+
+
+
+Compilation memory statistics disabled.
+
+Periodic native trim disabled
+
+JNI global refs:
+JNI global refs: 0, weak refs: 0
+
+JNI global refs memory usage: 0, weak refs: 0
+
+Process memory usage:
+Resident Set Size: 15876K (0% of 15985568K total physical memory with 1799480K free physical memory)
+
+OOME stack traces (most recent first):
+Classloader memory used:
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 28000 (10.0.28000.3002)
+OS uptime: 0 days 0:31 hours
+Hyper-V role detected
+
+CPU: total 16 (initial active 16) (16 cores per cpu, 2 threads per core) family 25 model 68 stepping 1 microcode 0xa404107, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, clwb, hv, rdtscp, rdpid, fsrm, f16c, cet_ss
+Processor Information for the first 16 processors :
+  Max Mhz: 3201, Current Mhz: 3201, Mhz Limit: 3201
+
+Memory: 4k page, system-wide physical 15610M (1756M free)
+TotalPageFile size 19665M (AvailPageFile size 138M)
+current process WorkingSet (physical memory assigned to process): 15M, peak: 15M
+current process commit charge ("private bytes"): 71M, peak: 314M
+
+vm_info: OpenJDK 64-Bit Server VM (25.0.3+-15898627-b508.16) for windows-amd64 JRE (25.0.3+-15898627-b508.16), built on 2026-07-20T17:54:23Z with MS VC++ 16.10 / 16.11 (VS2019)
+
+END.
