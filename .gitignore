@@ -1,4 +1,8 @@
 *.iml
+*.apk
+*.py
+*.kts
+*.bat
 .gradle
 /local.properties
 /.idea/caches
@@ -13,6 +17,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-*.apk
-*.py
-*.kts
